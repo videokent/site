@@ -6,7 +6,7 @@ app.use(cors());
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 
 
-app.post('../sub',urlencodedParser, function(req,res ){
+app.post('/sub',urlencodedParser, function(req,res ){
 
   res.render('sub2', {data: req.body});
   console.log(req.body);
