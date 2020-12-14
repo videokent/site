@@ -7,5 +7,5 @@ var urlencodedParser = bodyParser.urlencoded({extended:false});
 app.post('/sub',urlencodedParser, function(req,res ){
 
   res.render('sub');
-  console.log(req.body);
+  //console.log(req.body);
 });
