@@ -15,6 +15,4 @@ var server = http.createServer(function(req,res){
   res.end('hi dude');
 });
 server.listen(3000,'192.168.1.65');
-console.log("отслеживаем порт 3000")
-
- 
+console.log("отслеживаем порт1 3000")
