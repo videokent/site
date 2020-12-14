@@ -4,8 +4,8 @@ var app = express();
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 
 
-app.post('/about',urlencodedParser, function(req,res ){
+app.post('/sub',urlencodedParser, function(req,res ){
 
-  res.render('about');
+  res.render('sub');
   console.log(req.body);
 });
