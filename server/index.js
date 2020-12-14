@@ -2,8 +2,9 @@
  cors = require("cors");
  var bodyParser = require('body-parser');
 var app = express();
-var urlencodedParser = bodyParser.urlencoded({extended:false});
 app.use(cors());
+var urlencodedParser = bodyParser.urlencoded({extended:false});
+
 
 app.post('../sub',urlencodedParser, function(req,res ){
 
