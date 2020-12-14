@@ -1,18 +1,11 @@
-// var express = require("express");
-//var app = express();
+ var express = require("express");
+ var bodyParser = require('body-parser');
+var app = express();
+var urlencodedParser = bodyParser.urlencoded({extended:false});
 
 
-//app.get("/",function(request, response){
-//  response.send("hello world");
-//});
-//app.listen(591);
+app.post('/about',urlencodedParser, function(req,res ){
 
-var http = require('http');
-
-var server = http.createServer(function(req,res){
-
-  res.writeHead(200,{'Content-Type': 'text/plain'});
-  res.end('hi dude');
+  res.render('about');
+  console.log(req.body);
 });
-server.listen(3000,'192.168.1.65');
-console.log("отслеживаем порт1 3000")
