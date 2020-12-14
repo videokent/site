@@ -6,6 +6,6 @@ var urlencodedParser = bodyParser.urlencoded({extended:false});
 
 app.post('../sub',urlencodedParser, function(req,res ){
 
-  res.render('../sub2', {data: req.body});
+  res.render('sub2', {data: req.body});
   console.log(req.body);
 });
