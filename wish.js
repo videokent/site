@@ -1,4 +1,4 @@
-<script>
+
   // Full spec-compliant TodoMVC with localStorage persistence
   // and hash-based routing in ~120 effective lines of JavaScript.
 
@@ -156,4 +156,3 @@
 
   // mount
   app.$mount(".todoapp");
-</script>
