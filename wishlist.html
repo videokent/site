@@ -113,10 +113,9 @@
     </footer>
 
     <script>
-      // Full spec-compliant TodoMVC with localStorage persistence
-      // and hash-based routing in ~120 effective lines of JavaScript.
 
-      // localStorage persistence
+
+      // сохраняемость локального хранилища
       var STORAGE_KEY = "todos-vuejs-2.0";
       var todoStorage = {
         fetch: function() {
@@ -132,7 +131,7 @@
         }
       };
 
-      // visibility filters
+      // фильтры фидимости
       var filters = {
         all: function(todos) {
           return todos;
@@ -149,9 +148,9 @@
         }
       };
 
-      // app Vue instance
+      // экземпляр приложения vue
       var app = new Vue({
-        // app initial state
+        // начальное состояние приложения
         data: {
           todos: todoStorage.fetch(),
           newTodo: "",
@@ -159,7 +158,7 @@
           visibility: "all"
         },
 
-        // watch todos change for localStorage persistence
+        // слежение за изменением todos для сохранения локального хранилища
         watch: {
           todos: {
             handler: function(todos) {
@@ -169,8 +168,8 @@
           }
         },
 
-        // computed properties
-        // http://vuejs.org/guide/computed.html
+        // вычисляем свойства
+
         computed: {
           filteredTodos: function() {
             return filters[this.visibility](this.todos);
@@ -196,8 +195,8 @@
           }
         },
 
-        // methods that implement data logic.
-        // note there's no DOM manipulation here at all.
+        // методы, реализующие логику данных.
+        // здесь вообще нет никаких манипуляций с DOM.
         methods: {
           addTodo: function() {
             var value = this.newTodo && this.newTodo.trim();
@@ -242,9 +241,8 @@
           }
         },
 
-        // a custom directive to wait for the DOM to be updated
-        // before focusing on the input field.
-        // http://vuejs.org/guide/custom-directive.html
+        // пользовательский директивы ждут, пока дом будет обновляться
+        // прежде чем сосредоточиться на поле ввода.
         directives: {
           "todo-focus": function(el, binding) {
             if (binding.value) {
@@ -254,7 +252,7 @@
         }
       });
 
-      // handle routing
+      // ручная маршрутизация
       function onHashChange() {
         var visibility = window.location.hash.replace(/#\/?/, "");
         if (filters[visibility]) {
@@ -268,7 +266,7 @@
       window.addEventListener("hashchange", onHashChange);
       onHashChange();
 
-      // mount
+      // монтируем
       app.$mount(".todoapp");
     </script>
   </body>
