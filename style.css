@@ -1,8 +1,4 @@
-section{
-padding-top: 2em;
-padding-bottom: 2em;
 
-}
 
 
 footer .main-footer{ padding: 20px 0; background: #252525;}
@@ -76,5 +72,11 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -ms-transition: all 250ms ease-in-out 0s;
 -o-transition: all 250ms ease-in-out 0s;
 transition: all 250ms ease-in-out 0s;
+
+}
+
+section{
+padding-top: 2em;
+padding-bottom: 2em;
 
 }
