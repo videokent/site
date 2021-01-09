@@ -1,7 +1,7 @@
 
 
 
-footer .main-footer{ padding: 20px 0; background: #404040;}
+footer .main-footer{ padding: 20px 0; background:#505050;}
 footer ul{ padding-left: 0; list-style: none;}
 
 /* Copy Right Footer */
@@ -15,7 +15,7 @@ footer ul{ padding-left: 0; list-style: none;}
 .footer-copyright p { color: #969696; margin: 2px 0 0;}
 
 /* Footer Top */
-.footer-top{ background: #404040; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 3px solid #222;}
+.footer-top{ background: #505050; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 3px solid #222;}
 
 /* Footer transparent */
 footer.transparent .footer-top, footer.transparent .main-footer{ background: transparent;}
