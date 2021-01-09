@@ -1,7 +1,7 @@
 
 
 
-footer .main-footer{ padding: 20px 0; background: #aa98a9;}
+footer .main-footer{ padding: 20px 0; background: #404040;}
 footer ul{ padding-left: 0; list-style: none;}
 
 /* Copy Right Footer */
@@ -15,7 +15,7 @@ footer ul{ padding-left: 0; list-style: none;}
 .footer-copyright p { color: #969696; margin: 2px 0 0;}
 
 /* Footer Top */
-.footer-top{ background: #aa98a9; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 3px solid #222;}
+.footer-top{ background: #404040; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 3px solid #222;}
 
 /* Footer transparent */
 footer.transparent .footer-top, footer.transparent .main-footer{ background: transparent;}
@@ -72,11 +72,5 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -ms-transition: all 250ms ease-in-out 0s;
 -o-transition: all 250ms ease-in-out 0s;
 transition: all 250ms ease-in-out 0s;
-
-}
-
-section{
-padding-top: 2em;
-padding-bottom: 2em;
 
 }
