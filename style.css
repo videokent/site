@@ -1,5 +1,21 @@
 
+section{
+  section{
+  padding-top: 2em;
+  padding-bottom: 2em;
 
+  }
+  div.banner{
+  	margin-top: 20px;
+    margin-bottom: 20px;
+  	margin-left: 20px;
+  	margin-right: 20px;
+    padding-top:20px; 
+
+
+  }
+
+}
 
 footer .main-footer{ padding: 20px 0; background:#505050;}
 footer ul{ padding-left: 0; list-style: none;}
